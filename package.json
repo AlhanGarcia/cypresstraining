@@ -1,0 +1,22 @@
+{
+  "name": "cypresstraining-1",
+  "version": "1.0.0",
+  "description": "This is a test project to learn and practice Cypress.io",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlhanGarcia/cypresstraining.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlhanGarcia/cypresstraining/issues"
+  },
+  "homepage": "https://github.com/AlhanGarcia/cypresstraining#readme",
+  "devDependencies": {
+    "cypress": "^10.3.0"
+  }
+}
