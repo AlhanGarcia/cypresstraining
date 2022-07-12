@@ -2,7 +2,7 @@
 
 describe('My First Test', () => {
 
-    it('Does not do much!', () => {
+    it('First test', () => {
       cy.visit('https://rahulshettyacademy.com/seleniumPractise/#/')
       cy.get('.search-keyword').type('ca')
       cy.wait(2000)
@@ -23,7 +23,17 @@ describe('My First Test', () => {
         if(textVeg.includes('Cashews')){
           cy.wrap($el).find('button').click()
         }
+      }) 
+
+      // Resolve a promise before assigning it to a variable, otherwise it will break
+      // Promise has to be resolved manually with .then() method
+      cy.get('.brand').then(function(logoElement){
+        cy.log(logoElement.text())
       })
+
+      // This won't work because the promise hasn't been resolved yet
+      // const logo = cy.get('.brand')
+      // cy.log(logo.text())
 
     })
 
