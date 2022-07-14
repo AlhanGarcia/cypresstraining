@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/AlhanGarcia/cypresstraining#readme",
   "devDependencies": {
-    "cypress": "^10.3.0"
+    "cypress": "^10.3.0",
+    "cypress-iframe": "^1.0.1",
+    "iframe": "^1.0.0"
   }
 }
