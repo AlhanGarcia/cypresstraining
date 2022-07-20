@@ -28,6 +28,11 @@ getShopTab()
     return cy.get('ul[class="navbar-nav"]').contains('Shop')
 }
 
+getFormControl()
+{
+    return cy.get(':nth-child(1) > .form-control')
+}
+
 }
 
 //* export will make sure to make this class available to all other modules
