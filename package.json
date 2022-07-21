@@ -7,13 +7,17 @@
     "test": "node_modules\\.bin\\cypress run",
     "headTest": "npm run test -- --headed",
     "chromeTest": "npm run test -- --browser chrome",
-    "recordDashboradTest": "npm run test -- --record --key 7ebe2070-a70d-4550-8704-d45289553f7c"
+    "recordDashboradTest": "npm run test -- --record --key 7ebe2070-a70d-4550-8704-d45289553f7c",
+    "GreenKartTest": "npm run test -- --spec \"cypress/integration/GreenKart/*\""
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AlhanGarcia/cypresstraining.git"
   },
-  "author": "Alhan",
+  "author": "AlhanGarcia",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/AlhanGarcia/cypresstraining/issues"
@@ -21,9 +25,12 @@
   "homepage": "https://github.com/AlhanGarcia/cypresstraining#readme",
   "devDependencies": {
     "cypress": "^10.3.0",
+    "cypress-cucumber-preprocessor": "^4.3.1",
     "cypress-iframe": "^1.0.1",
     "iframe": "^1.0.0",
-    "mochawesome": "^7.1.3",
-    "mocha": "^5.2.0"
+    "mochawesome": "^7.1.3"
+  },
+  "dependencies": {
+    "mocha": "^10.0.0"
   }
 }
